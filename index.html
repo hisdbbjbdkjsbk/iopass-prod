@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&_v=20230823153623"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/main.min.css?_v=20230823153623" />
+  <script defer src="gsap/gsap.min.js?_v=20230823153623"></script>
+  <script defer src="gsap/ScrollToPlugin.min.js?_v=20230823153623"></script>
+  <script defer src="gsap/ScrollTrigger.min.js?_v=20230823153623"></script>
+  <script defer src="gsap/ScrollSmoother.min.js?_v=20230823153623"></script>
+  <script defer src="js/script.min.js?_v=20230823153623"></script>
+  <title>IOPASS - Home</title>
+</head>
+
+  <body>
+    <div class="curtains">
+      <div class="preloader">
+      </div>
+      <div class="curtain-1"></div>
+      <div class="curtain-2"></div>
+    </div>
+    <div class="fullscreen scroll-lock">
+      <div class="cursor"></div>
+      <div class="cursor-tray"></div>
+      <audio
+        class="audio-player"
+        src="sounds/click.wav"
+        muted
+        id="click"
+      ></audio>
+      <audio
+        class="audio-player"
+        src="sounds/hover.wav"
+        muted
+        id="hover"
+      ></audio>
+      <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="./" data-point="true"
+          ><img src="img/logo-light.png?_v=1692794183425" alt="logo"
+        /></a>
+      </div>
+      <div class="mobile mobile-menu-wrapper">
+        <div data-point="true" class="mobile-menu-trigger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__body">
+            <ul class="mobile-menu__container">
+              <li class="mobile-menu__item">
+                <a
+                  href="about.html"
+                  class="btn mobile-menu__target"
+                  data-point="true"
+                  >about</a
+                >
+              </li>
+              <!-- <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__target" data-point="true"
+                    >technology</a
+                  >
+                </li> -->
+              <!-- <li class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__target" data-point="true">team</a>
+                </li> -->
+              <li class="mobile-menu__item">
+                <button
+                  class="btn mobile-menu__target btn-getcard"
+                  data-name-form="getcard"
+                  data-point="true"
+                >
+                  getcard
+                </button>
+              </li>
+              <li class="mobile-menu__item">
+                <button
+                  class="btn mobile-menu__target btn--contact-us"
+                  data-name-form="contact_us"
+                  data-point="true"
+                >
+                  contact us
+                </button>
+              </li>
+              <li class="mobile-menu__item mobile-menu__item--follow">
+                <button
+                  class="btn mobile-menu__target mobile-menu__btn--follow"
+                  data-point="true"
+                >
+                  follow
+                </button>
+              </li>
+            </ul>
+            <div class="mobile mobile-follow">
+              <div class="mobile-follow__body">
+                <div class="socialnet">
+                  <a href="#" class="socialnet__link" data-point="true">
+                    <img src="img/icons/icons.svg?_v=1692794183425#vimeo" />
+                  </a>
+                  <a href="#" class="socialnet__link" data-point="true">
+                    <img src="img/icons/icons.svg?_v=1692794183425#youtube" />
+                  </a>
+                  <a href="#" class="socialnet__link" data-point="true"
+                    ><img src="img/icons/icons.svg?_v=1692794183425#knet" />
+                  </a>
+                  <a href="#" class="socialnet__link" data-point="true"
+                    ><img src="img/icons/icons.svg?_v=1692794183425#facebook" />
+                  </a>
+                  <a href="#" class="socialnet__link" data-point="true">
+                    <img src="img/icons/icons.svg?_v=1692794183425#instagram" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="arrow">
+            <svg class="icon-arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+            <svg class="dva icon-arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+          </div>
+        </div>
+      </div>
+      <div class="desktop">
+        <ul class="menu main-menu">
+          <!-- <li class="menu__item">
+            <a href="about.html" data-point="true" class="menu__link"
+              >technology</a
+            >
+          </li> -->
+          <!-- <li class="menu__item">
+            <a href="about.html" data-point="true" class="menu__link">team</a>
+          </li> -->
+          <li class="menu__item">
+            <a href="about.html" data-point="true" class="menu__link">about</a>
+          </li>
+          <li class="menu__item">
+            <button
+              class="btn menu__button btn--contact-us"
+              data-name-form="contact_us"
+              data-point="true"
+            >
+              contact us
+            </button>
+          </li>
+          <li class="menu__item">
+            <button
+              class="btn btn--get btn-getcard"
+              data-name-form="getcard"
+              data-point="true"
+            >
+              getcard
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+      <div class="fullscreen__body">
+        <h1 class="fullscreen__title main-title">comming soon</h1>
+      </div>
+      <div class="fullscreen__elem">
+        <video class="video" id="video-bg" poster="img/poster.jpg" autoplay loop muted>
+          <!-- <source src="video/home-bg.webm" type="video/webm" /> -->
+          <!-- <source src="video/home-bg.mp4" type="video/mp4" /> -->
+        </video>
+      </div>
+      <div class="desclaimer">
+        <section class="desclaimer__body">
+          <h2 class="desclaimer__title">desclaimer</h2>
+          <p class="desclaimer__text">
+            This website and all content available through this website are
+            provided to users "as is" without any express warranties or
+            representations of any kind. iopass, disclaims all representations,
+            warranties, terms and conditions relating to this website and all
+            content. creative clout design.
+          </p>
+          <p class="desclaimer__text">
+            iopass. shall not be liable for any damages arising out of or
+            related to the access or use of the Website by its visitors. Any use
+            of the content and trademarks including (but not limited to)
+            reproduction, publication and any other form of exploitation of
+            parts of the content designed by the Website without express consent
+            is prohibited. Previews from creative clout design team.
+            Unauthorized use of the Website, Content, trademarks, or other
+            intellectual and/or industrial property owned by iopass , It may
+            result in monetary damages and other civil and criminal penalties
+            for infringement of copyrights, trademarks, and other intellectual
+            property rights.
+          </p>
+        </section>
+      </div>
+      <div class="follow">
+        <div class="follow__body">
+          <div class="socialnet">
+            <a href="#" class="socialnet__link" data-point="true">
+              <img src="img/icons/icons.svg?_v=1692794183425#vimeo" />
+            </a>
+            <a href="#" class="socialnet__link" data-point="true">
+              <img src="img/icons/icons.svg?_v=1692794183425#youtube" />
+            </a>
+            <a href="#" class="socialnet__link" data-point="true"
+              ><img src="img/icons/icons.svg?_v=1692794183425#knet" />
+            </a>
+            <a href="#" class="socialnet__link" data-point="true"
+              ><img src="img/icons/icons.svg?_v=1692794183425#facebook" />
+            </a>
+            <a href="#" class="socialnet__link" data-point="true">
+              <img src="img/icons/icons.svg?_v=1692794183425#instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mobile mobile-footer-wrapper">
+      </div> -->
+        <footer class="footer">
+  <div class="small-preloader">
+    <picture><source srcset="img/small-preloader.webp" type="image/webp"><img src="img/small-preloader.png?_v=1692794183425" alt="loader"></picture>
+    <span class="small-preloader__text">sending...</span>
+  </div>
+  <form
+    class="form form-contact needs-validation"
+    data-form="contact_us"
+    novalidate
+    method="POST"
+    action="./sendmail.php"
+  >
+    <div class="form__overlay">
+      <div class="contact-us">
+        <div class="contact-us__body">
+          <textarea
+            class="contact-us__message form-control"
+            name="message"
+            id="msg"
+            placeholder="message"
+            maxlength="200"
+            required
+            pattern="[a-z][0-9]"
+          ></textarea>
+          <div class="invalid-feedback">Enter your message</div>
+        </div>
+        <button class="btn btn--back" data-point="true">
+          <span>back</span>
+        </button>
+      </div>
+    </div>
+    <div class="form__wrapper">
+      <div class="form__container container">
+        <div class="form__content-wrapper">
+          <div class="form__text">
+            <address>
+              <p>Kyiv</p>
+              <p>Padol, 367</p>
+              <p>Ukraine 01014</p>
+            </address>
+          </div>
+          <div class="form__component">
+            <input
+              type="email"
+              class="form__email form-control"
+              placeholder="E-mail"
+              name="email"
+              maxlength="100"
+              required
+            />
+            <button class="btn btn--get" data-point="true" type="submit">
+              Sent
+            </button>
+            <div class="invalid-feedback invalid-feedback--component">
+              Enter your email
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <picture><source srcset="img/logo-light.webp" type="image/webp"><img src="img/logo-light.png?_v=1692794183425" alt="logo" class="logo" /></picture>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form
+    class="form form-getcard needs-validation"
+    data-form="getcard"
+    novalidate
+    method="POST"
+    action="./sendmail.php"
+  >
+    <div class="form__overlay" data-point="true"></div>
+    <div class="form__wrapper">
+      <div class="form__container container">
+        <div class="form__content-wrapper">
+          <div class="form__text">
+            <p>Contact our team iopass</p>
+            <p>E-Mail address</p>
+          </div>
+          <div class="form__component">
+            <input
+              type="email"
+              class="form__email form-control"
+              placeholder="E-mail"
+              name="email"
+              maxlength="100"
+              required
+            />
+            <button class="btn btn--get" data-point="true" type="submit">
+              Get card
+            </button>
+            <div class="invalid-feedback invalid-feedback--component">
+              Enter your email
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <picture><source srcset="img/logo-light.webp" type="image/webp"><img src="img/logo-light.png?_v=1692794183425" alt="logo" class="logo" /></picture>
+        </div>
+      </div>
+    </div>
+  </form>
+</footer>
+
+      <div class="block-buttons">
+        <button class="btn btn--follow" data-point="true">
+          <img src="img/icons/icons.svg?_v=1692794183425#follow" />
+        </button>
+        <button data-point="true" class="btn btn--desclaimer">
+          desclaimer
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
